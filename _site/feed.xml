@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carla</title>
+    <description>Carla is a Management Engineering student at the University of Waterloo who is passionate about interaction design and social change. This is her portolio.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 11 Feb 2017 22:26:18 -0500</pubDate>
+    <lastBuildDate>Sat, 11 Feb 2017 22:26:18 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
+    
+  </channel>
+</rss>
