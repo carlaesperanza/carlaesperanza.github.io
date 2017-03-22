@@ -1,0 +1,82 @@
+---
+layout: default
+section_id: portfolio
+works_left:
+- title: Change At Hand
+  link_to: portfolio-item.html
+  image: images/@stock/menuefirst.png
+  categories: UX design ~ UI design ~ Social media strategy
+- title: Decision Support Tool
+  link_to: portfolio-item-2.html
+  image: images/@stock/thirdmenue.png
+  categories: Visual Basics for Applications programming
+
+
+works_right:
+- title: SLideIN
+  link_to: portfolio-item-3.html
+  image: images/@stock/menuelast.png
+  categories: UX design ~ UI design
+
+- title: Prizeo
+  link_to: portfolio-item-4.html
+  image: images/@stock/icon.png
+  categories: UX design
+
+
+
+---
+
+<div class="full light-grey">
+  <div class="four spacing"></div>
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h1 class="wow slideInUp">My work</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-9 medium-centered columns">
+        <div class="header-quote">
+          <p>"There's a way to do it better—find it."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="full">
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="gallery-left-section">
+        {% for work in page.works_left %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="gallery-right-section">
+        {% for work in page.works_right %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="spacing"></div>
+</div>
