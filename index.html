@@ -107,6 +107,25 @@ clients:
 
 <head>
 <title> carla </title>
+  
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "b317209a-aefb-471d-b5df-66a6d9c2f367",
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      subdomainName: 'carlalealramos',
+      /*
+      subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/f6hqN
+      */
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
 </head>
 
 <div class="full no-padding" style="height: 100vh;">
